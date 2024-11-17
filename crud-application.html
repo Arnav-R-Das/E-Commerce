@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang = "en-IN">
+
+    <head>
+
+        <!-- TITLE -->
+            <title>
+                CRUD 2
+            </title>
+
+        <!-- CSS -->
+            <link
+                href = "/css/crud-application.css"
+                rel = "stylesheet"
+                type = "text/css"
+            >
+
+        <!-- OTHER -->
+            <meta
+                charset = "UTF-8"
+                name = "viewport"
+                content = "
+                    width = device-width,
+                    initial-scale = 1.0
+                "
+            >
+
+    </head>
+
+    <body>
+            <div class = "container">
+                <div class = "form_container">
+                    <form class = "create_form">
+                        <input type = "text" class = "name" />
+                        <input type = "text" class = "email" />
+                        <button>Create</button>
+                    </form>
+                    <form class = "update_form">
+                        <input type = "text" class = "uname" />
+                        <input type = "text" class = "uemail" />
+                        <button>Update</button>
+                    </form>
+                    <div class = "add_div">
+                        <button>Add +</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Action</th>
+                        </thead>
+                        <tbody class = "data table">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+    </body>
+
+<!-- JAVASCRIPT -->
+    <script src = "/javascript/crud-application.js">
+    </script>
+
+</html>

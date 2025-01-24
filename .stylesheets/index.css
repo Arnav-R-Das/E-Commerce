@@ -1,0 +1,115 @@
+/******************************* :ROOT ********************************/
+
+:root {
+
+    /* BOX MODEL: Height, Width, Padding, Border, Margin */
+
+        --standard-margin: 0 125px 0;
+
+        --navbar-height: 75px;
+        --navbar-border-bottom: 1px;
+
+        --categories-height: 50px;
+
+        --carousel-height: calc(100vh - (var(--navbar-height) + var(--categories-height) + var(--navbar-border-bottom)));
+        --carousel-margin: 35px;
+
+        --section-height: 50vh;
+
+        --team-height: 50vh;
+
+        --footer-height: 50vh;
+
+    /* COLORS */
+        --color-0: hsl(0, 0%, 0%);
+        --color-85: hsl(0, 0%, 75%);
+        --color-95: hsl(0, 0%, 95%);
+        --color-100: hsl(0, 0%, 100%);
+
+    /* FONT */
+        --font-family: sans-serif;
+        --font-size: 14px;
+}
+
+/******************************** BODY ********************************/
+
+body {
+    margin: 0;
+
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+
+/******************************* NAVBAR *******************************/
+
+#navbar {
+    height: var(--navbar-height);
+
+    font-size: large;
+    font-weight: bold;
+}
+
+#navbar div {
+    height: var(--navbar-height);
+    border-bottom: var(--navbar-border-bottom) solid black;
+    margin: var(--standard-margin);
+}
+
+/***************************** CATEGORIES *****************************/
+
+#categories {
+    height: var(--categories-height);
+}
+
+#categories div {
+    height: var(--categories-height);
+    margin: var(--standard-margin);
+}
+
+/****************************** CAROUSEL ******************************/
+
+#carousel {
+    height: var(--carousel-height);
+    margin-bottom: var(--carousel-margin);
+
+    background: grey;
+}
+
+
+/****************************** SECTION *******************************/
+
+#section div {
+    height: var(--section-height);
+    margin: var(--standard-margin);
+}
+
+/******************************** TEAM ********************************/
+
+#team {
+    height: var(--team-height);
+
+    background-color: hsl(0, 0%, 67%);
+}
+
+#team div {
+    height: var(--team-height);
+    margin: var(--standard-margin);
+
+    outline: 1px solid red;
+}
+
+/******************************* FOOTER *******************************/
+
+#footer {
+    height: var(--footer-height);
+
+    background-color: hsl(0, 0%, 33%);
+    color: hsl(0, 0%, 100%)
+}
+
+#footer div {
+    height: var(--footer-height);
+    margin: var(--standard-margin);
+
+    outline: 1px solid red;
+}
